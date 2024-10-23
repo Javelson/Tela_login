@@ -1,5 +1,5 @@
 import flet as ft
-from hx2rgb import rgb2hex
+import rgb2hex
 
 # Incio
 

@@ -1,6 +1,3 @@
-from controls import ft, Login
-
-def main(page: ft.page):
-    page.title ='Login'
-    page
+from controls import ft, rgb2hex, Login
+    
 
