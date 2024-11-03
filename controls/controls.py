@@ -154,8 +154,11 @@ class Registrar(ft.Container):
                 name = ft.icons.PERSON,
                 color =rgb_to_hex([58, 145, 235]),
                 size=80
+            ),
+            on_click=lambda _: self.ph.pick_files(
+                dialog_title='image Picture',
+                file_type= ft.FilePickerFileType.IMAGE
             )
-            
         ),
         ft.Column(
             controls=[
@@ -292,6 +295,7 @@ class FilePicker(ft.FilePicker):
         if e.files:
             for file in e.files:
                 image_path.append(file.name)  
+            print(image_path)
             self.control.image_pic.image_src = image_path[-1]
             self.control.image_pic.content = None
 
