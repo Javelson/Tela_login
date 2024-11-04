@@ -1,5 +1,5 @@
 import flet as ft
-from controls.controls import Login  # Supondo que Login está definido em controls.py
+from controls.controls import LoginUsername  # Supondo que Login está definido em controls.py
 
 # Função para converter RGB em hexadecimal
 def rgb_to_hex(rgb):
@@ -14,7 +14,7 @@ def main(page: ft.Page):
 
     row = ft.Row(
         controls=[
-            Login(page=page)
+            LoginUsername(page=page)
         ],
         alignment= ft.MainAxisAlignment.CENTER
     )
